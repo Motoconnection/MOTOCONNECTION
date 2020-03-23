@@ -45,14 +45,6 @@
             this.Add = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dataGridViewC = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblNroCotizacion = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Code_Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name_Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +53,14 @@
             this.Cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblNroCotizacion = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -73,7 +73,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(234)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -251,9 +251,70 @@
             this.dataGridViewC.Size = new System.Drawing.Size(963, 229);
             this.dataGridViewC.TabIndex = 4;
             // 
+            // Barcode
+            // 
+            this.Barcode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Barcode.HeaderText = "Barcode";
+            this.Barcode.Name = "Barcode";
+            this.Barcode.ReadOnly = true;
+            this.Barcode.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Code_Product
+            // 
+            this.Code_Product.HeaderText = "Code Product";
+            this.Code_Product.Name = "Code_Product";
+            this.Code_Product.ReadOnly = true;
+            this.Code_Product.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Name_Product
+            // 
+            this.Name_Product.HeaderText = "Name Product";
+            this.Name_Product.Name = "Name_Product";
+            this.Name_Product.ReadOnly = true;
+            this.Name_Product.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Name_Product.Width = 300;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Disponibilidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Price_Distributor
+            // 
+            this.Price_Distributor.HeaderText = "Price Distributor";
+            this.Price_Distributor.Name = "Price_Distributor";
+            this.Price_Distributor.ReadOnly = true;
+            this.Price_Distributor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Cant
+            // 
+            this.Cant.HeaderText = "Cantidad";
+            this.Cant.Name = "Cant";
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Precio Total";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
+            this.Total.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Eliminar
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle4.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle4.NullValue")));
+            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Eliminar.HeaderText = "-";
+            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
+            this.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Width = 20;
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(234)))), ((int)(((byte)(244)))));
             this.panel3.Controls.Add(this.lblNroCotizacion);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.lblFecha);
@@ -341,67 +402,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1028, 63);
             this.panel4.TabIndex = 7;
-            // 
-            // Barcode
-            // 
-            this.Barcode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Barcode.HeaderText = "Barcode";
-            this.Barcode.Name = "Barcode";
-            this.Barcode.ReadOnly = true;
-            this.Barcode.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Code_Product
-            // 
-            this.Code_Product.HeaderText = "Code Product";
-            this.Code_Product.Name = "Code_Product";
-            this.Code_Product.ReadOnly = true;
-            this.Code_Product.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Name_Product
-            // 
-            this.Name_Product.HeaderText = "Name Product";
-            this.Name_Product.Name = "Name_Product";
-            this.Name_Product.ReadOnly = true;
-            this.Name_Product.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Name_Product.Width = 300;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Disponibilidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Price_Distributor
-            // 
-            this.Price_Distributor.HeaderText = "Price Distributor";
-            this.Price_Distributor.Name = "Price_Distributor";
-            this.Price_Distributor.ReadOnly = true;
-            this.Price_Distributor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Cant
-            // 
-            this.Cant.HeaderText = "Cantidad";
-            this.Cant.Name = "Cant";
-            // 
-            // Total
-            // 
-            this.Total.HeaderText = "Precio Total";
-            this.Total.Name = "Total";
-            this.Total.ReadOnly = true;
-            this.Total.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Eliminar
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle4.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle4.NullValue")));
-            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Eliminar.HeaderText = "-";
-            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
-            this.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Width = 20;
             // 
             // Busqueda
             // 
