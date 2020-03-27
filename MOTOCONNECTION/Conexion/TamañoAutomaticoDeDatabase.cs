@@ -14,15 +14,15 @@ namespace MOTOCONNECTION.Conexion
         {
             List.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             //List.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
-            List.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            List.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            List.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            List.EnableHeadersVisualStyles = false;
-            DataGridViewCellStyle styCabeceras = new DataGridViewCellStyle();
-            styCabeceras.BackColor = System.Drawing.Color.Black;
-            styCabeceras.ForeColor = System.Drawing.Color.Orange;
-            styCabeceras.Font = new Font("Candara", 10, FontStyle.Bold);
-            List.ColumnHeadersDefaultCellStyle = styCabeceras;                        
+            //List.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //List.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //List.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            //List.EnableHeadersVisualStyles = false;
+            //DataGridViewCellStyle styCabeceras = new DataGridViewCellStyle();
+            //styCabeceras.BackColor = System.Drawing.Color.Black;
+            //styCabeceras.ForeColor = System.Drawing.Color.Orange;
+            //styCabeceras.Font = new Font("Candara", 10, FontStyle.Bold);
+            //List.ColumnHeadersDefaultCellStyle = styCabeceras;
         }
     }
 }
