@@ -22,6 +22,6 @@ C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.exe
 C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.pdb
 C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Usuarios.resources
 C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Login.Login.resources
-C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.exe.config
-C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.exe
-C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.pdb
+C:\Users\User\Source\Repos\Motoconnection4\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.exe.config
+C:\Users\User\Source\Repos\Motoconnection4\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.exe
+C:\Users\User\Source\Repos\Motoconnection4\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.pdb
