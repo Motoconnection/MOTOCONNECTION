@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flpUsuarios = new System.Windows.Forms.FlowLayoutPanel();
             this.txtNombre = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,12 +73,20 @@
             this.txtNombre.TabIndex = 3;
             this.txtNombre.Text = "label2";
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(41, 265);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 4;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1044, 519);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flpUsuarios);
@@ -98,5 +107,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flpUsuarios;
         private System.Windows.Forms.Label txtNombre;
+        private System.Windows.Forms.Panel panel1;
     }
 }
