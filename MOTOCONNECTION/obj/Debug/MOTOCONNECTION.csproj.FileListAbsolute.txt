@@ -28,3 +28,13 @@ C:\Users\User\Source\Repos\Motoconnection4\MOTOCONNECTION\obj\Debug\MOTOCONNECTI
 C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.exe.config
 C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.exe
 C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.pdb
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.exe
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\bin\Debug\MOTOCONNECTION.pdb
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.csprojResolveAssemblyReference.cache
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Cotizaciones.frmConsultarCotizaciones.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Cotizaciones.frmCotizacion.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Cotizaciones.frmInicioCotizaciones.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Login.Login.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Usuarios.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Properties.Resources.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.csproj.GenerateResource.Cache
