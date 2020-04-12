@@ -38,3 +38,7 @@ C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MOD
 C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Usuarios.resources
 C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Properties.Resources.resources
 C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.csproj.GenerateResource.Cache
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Login.frmInicioSesion.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.MenuPrincipal.frmMenuPrincipal.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Usuarios.frmNuevoUsuario.resources
+C:\Users\sebas\Sources\Repos\NewRepo\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Usuarios.frmMostrarUsuarios.resources

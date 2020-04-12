@@ -32,7 +32,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flpUsuarios = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtNombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,32 +62,24 @@
             this.flpUsuarios.Size = new System.Drawing.Size(858, 224);
             this.flpUsuarios.TabIndex = 2;
             // 
-            // txtNombre
-            // 
-            this.txtNombre.AutoSize = true;
-            this.txtNombre.Location = new System.Drawing.Point(247, 25);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(40, 15);
-            this.txtNombre.TabIndex = 3;
-            this.txtNombre.Text = "label2";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1044, 519);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flpUsuarios);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -97,6 +88,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flpUsuarios;
-        private System.Windows.Forms.Label txtNombre;
     }
 }

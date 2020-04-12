@@ -14,6 +14,7 @@ namespace MOTOCONNECTION.MODULOS.Login
 {
     public partial class Login : Form
     {
+        string Nombre;
         public Login()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace MOTOCONNECTION.MODULOS.Login
             con.ConnectionString = CONEXIONES.ConexionMaestra.conexiones;
             con.Open();
             SqlCommand cmd = new SqlCommand();
-            cmd = new SqlCommand("select * from T_Usuario WHERE Estado = 'ACTIVO'", con);
+            cmd = new SqlCommand("select * from T_Usuario WHERE Estado = 'Activo'", con);
             SqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
@@ -34,7 +35,7 @@ namespace MOTOCONNECTION.MODULOS.Login
                 PictureBox I1 = new PictureBox();
 
                 b.Text = rdr["Nombre"].ToString();
-                b.Name = rdr["idUsuario"].ToString();
+                b.Name = rdr["IdUsuario"].ToString();
                 b.Size = new System.Drawing.Size(175, 25);
                 b.Font = new System.Drawing.Font("Century Gothic", 13);
                 b.BackColor = Color.FromArgb(32,32,32);
@@ -70,12 +71,25 @@ namespace MOTOCONNECTION.MODULOS.Login
         }
         private void miEventoImagen(System.Object sender, EventArgs e)
         {
-            txtNombre.Text = ((PictureBox)sender).Tag.ToString();            
+            Nombre = ((PictureBox)sender).Tag.ToString();
+            frmInicioSesion frmInicioSesion = new frmInicioSesion(Nombre);
+            frmInicioSesion.ShowDialog();
+            this.Hide();
+
         }
 
         private void mieventoLabel(System.Object sender, EventArgs e)
         {
-            txtNombre.Text = ((Label)sender).Text;           
+    
+            Nombre = ((Label)sender).Text;
+            frmInicioSesion frmInicioSesion = new frmInicioSesion(Nombre);
+            frmInicioSesion.ShowDialog();
+            this.Hide();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            DIBUJARusuarios();
         }
     }
 }

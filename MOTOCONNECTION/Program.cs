@@ -16,7 +16,7 @@ namespace MOTOCONNECTION
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Usuarios());
+            Application.Run(new MODULOS.MenuPrincipal.frmMenuPrincipal());
         }
     }
 }
