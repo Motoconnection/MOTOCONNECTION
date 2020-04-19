@@ -61,7 +61,21 @@ namespace MOTOCONNECTION.MODULOS.Usuarios
         private void dtgUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             MODULOS.Usuarios.frmNuevoUsuario frm = new MODULOS.Usuarios.frmNuevoUsuario();
+            this.Hide();
             frm.Show();
+            //lblID_Usuario.Text = dtgUsuarios.SelectedCells[1].Value.ToString();
+            //txtNombre.Text = dtgUsuarios.SelectedCells[2].Value.ToString();
+            //txtContrasena.Text = dtgUsuarios.SelectedCells[3].Value.ToString();
+            //pctICONO.BackgroundImage = null;
+            //byte[] b = (Byte[])dtgUsuarios.SelectedCells[4].Value;
+            //MemoryStream ms = new MemoryStream(b);
+            //pctICONO.Image = Image.FromStream(ms);
+            //lblIcono.Visible = false;
+            //txtCorreo.Text = dtgUsuarios.SelectedCells[5].Value.ToString();
+            //cmbRol.Text = dtgUsuarios.SelectedCells[6].Value.ToString();
+            //btnGuardar.Visible = false;
+            //btnGuardarCambios.Visible = true;
+
         }
 
         private void dtgUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
