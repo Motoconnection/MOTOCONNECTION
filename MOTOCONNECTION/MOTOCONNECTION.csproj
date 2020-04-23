@@ -60,12 +60,6 @@
     <Compile Include="MODULOS\Cotizaciones\frmCotizacion.Designer.cs">
       <DependentUpon>frmCotizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="MODULOS\Cotizaciones\frmInicioCotizaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MODULOS\Cotizaciones\frmInicioCotizaciones.Designer.cs">
-      <DependentUpon>frmInicioCotizaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="MODULOS\Login\frmInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +105,6 @@
     <EmbeddedResource Include="MODULOS\Cotizaciones\frmCotizacion.resx">
       <DependentUpon>frmCotizacion.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MODULOS\Cotizaciones\frmInicioCotizaciones.resx">
-      <DependentUpon>frmInicioCotizaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Login\frmInicioSesion.resx">
       <DependentUpon>frmInicioSesion.cs</DependentUpon>
