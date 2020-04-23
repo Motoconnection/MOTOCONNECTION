@@ -48,6 +48,18 @@
   <ItemGroup>
     <Compile Include="CONEXIONES\ConexionMaestra.cs" />
     <Compile Include="CONEXIONES\TamañoAutomaticoDeDatabase.cs" />
+    <Compile Include="MODULOS\Clientes\frmMostrarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Clientes\frmMostrarClientes.Designer.cs">
+      <DependentUpon>frmMostrarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Clientes\frmNuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Clientes\frmNuevoCliente.Designer.cs">
+      <DependentUpon>frmNuevoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\Cotizaciones\frmConsultarCotizaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MODULOS\Clientes\frmMostrarClientes.resx">
+      <DependentUpon>frmMostrarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Clientes\frmNuevoCliente.resx">
+      <DependentUpon>frmNuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Cotizaciones\frmConsultarCotizaciones.resx">
       <DependentUpon>frmConsultarCotizaciones.cs</DependentUpon>
       <SubType>Designer</SubType>
