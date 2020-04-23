@@ -19,6 +19,7 @@ namespace MOTOCONNECTION.MODULOS.Usuarios
         {
             InitializeComponent();
         }
+        String IdUsuario;
         private void frmMostrarUsuarios_Load(object sender, EventArgs e)
         {
             mostrar_usuarios();
@@ -55,27 +56,45 @@ namespace MOTOCONNECTION.MODULOS.Usuarios
 
         private void btnEditarUsuario_Click(object sender, EventArgs e)
         {
+            IdUsuario = dtgUsuarios.SelectedCells[1].Value.ToString();
+            panelEditarUsuarios.Visible = true;
+            lblMostrar.Visible = false;
+            lblEditar.Visible = true;
+            txtNombre.Text = dtgUsuarios.SelectedCells[2].Value.ToString();
+            txtContrasena.Text = dtgUsuarios.SelectedCells[3].Value.ToString();
 
+            pctICONO.BackgroundImage = null;
+            byte[] b = (Byte[])dtgUsuarios.SelectedCells[4].Value;
+            MemoryStream ms = new MemoryStream(b);
+            pctICONO.Image = Image.FromStream(ms);
+
+
+            txtCorreo.Text = dtgUsuarios.SelectedCells[5].Value.ToString();
+            cmbRol.Text = dtgUsuarios.SelectedCells[6].Value.ToString();
+            panel4.Visible = true;
+            btnGuardarCambios.Visible = true;
         }
 
         private void dtgUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            MODULOS.Usuarios.frmNuevoUsuario frm = new MODULOS.Usuarios.frmNuevoUsuario();
-            this.Hide();
-            frm.Show();
-            //lblID_Usuario.Text = dtgUsuarios.SelectedCells[1].Value.ToString();
-            //txtNombre.Text = dtgUsuarios.SelectedCells[2].Value.ToString();
-            //txtContrasena.Text = dtgUsuarios.SelectedCells[3].Value.ToString();
-            //pctICONO.BackgroundImage = null;
-            //byte[] b = (Byte[])dtgUsuarios.SelectedCells[4].Value;
-            //MemoryStream ms = new MemoryStream(b);
-            //pctICONO.Image = Image.FromStream(ms);
-            //lblIcono.Visible = false;
-            //txtCorreo.Text = dtgUsuarios.SelectedCells[5].Value.ToString();
-            //cmbRol.Text = dtgUsuarios.SelectedCells[6].Value.ToString();
-            //btnGuardar.Visible = false;
-            //btnGuardarCambios.Visible = true;
+            
+            IdUsuario=dtgUsuarios.SelectedCells[1].Value.ToString();
+            panelEditarUsuarios.Visible = true;
+            lblMostrar.Visible = false;
+            lblEditar.Visible = true;
+            txtNombre.Text = dtgUsuarios.SelectedCells[2].Value.ToString();
+            txtContrasena.Text = dtgUsuarios.SelectedCells[3].Value.ToString();
 
+            pctICONO.BackgroundImage = null;
+            byte[] b = (Byte[])dtgUsuarios.SelectedCells[4].Value;
+            MemoryStream ms = new MemoryStream(b);
+            pctICONO.Image = Image.FromStream(ms);
+
+
+            txtCorreo.Text = dtgUsuarios.SelectedCells[5].Value.ToString();
+            cmbRol.Text = dtgUsuarios.SelectedCells[6].Value.ToString();
+            panel4.Visible = true;
+            btnGuardarCambios.Visible = true;
         }
 
         private void dtgUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -130,6 +149,105 @@ namespace MOTOCONNECTION.MODULOS.Usuarios
                     }
                 }
             }
+        }
+
+        private void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "")
+            {
+                try
+                {
+                    SqlConnection con = new SqlConnection();
+                    con.ConnectionString = CONEXIONES.ConexionMaestra.conexiones;
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd = new SqlCommand("editar_usuario", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@idUsuario", Convert.ToInt32(IdUsuario));
+                    cmd.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+                    cmd.Parameters.AddWithValue("@Contrasena", txtContrasena.Text);
+                    cmd.Parameters.AddWithValue("@Correo", txtCorreo.Text);
+                    cmd.Parameters.AddWithValue("@Rol", cmbRol.Text);
+
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                    pctICONO.Image.Save(ms, pctICONO.Image.RawFormat);
+                    cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
+
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    mostrar_usuarios();
+                    panelEditarUsuarios.Visible = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+
+                }
+
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox4.Image;
+            flwpnlICONOS.Visible = false;
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox5.Image;
+            flwpnlICONOS.Visible = false;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox6.Image;
+            flwpnlICONOS.Visible = false;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox7.Image;
+            flwpnlICONOS.Visible = false;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox8.Image;
+            flwpnlICONOS.Visible = false;
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox9.Image;
+            flwpnlICONOS.Visible = false;
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            pctICONO.Image = pictureBox10.Image;
+            flwpnlICONOS.Visible = false;
+        }
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            dlg.InitialDirectory = "";
+            dlg.Filter = "Imagenes|*.jpg;*.png";
+            dlg.FilterIndex = 2;
+            dlg.Title = "Cargador de Imagenes";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                pctICONO.BackgroundImage = null;
+                pctICONO.Image = new Bitmap(dlg.FileName);
+                pctICONO.SizeMode = PictureBoxSizeMode.Zoom;
+                flwpnlICONOS.Visible = false;
+
+            }
+        }
+
+        private void pctICONO_Click(object sender, EventArgs e)
+        {
+            flwpnlICONOS.Visible = true;
         }
     }
 }

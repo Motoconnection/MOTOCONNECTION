@@ -54,7 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnGuardarCambios = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.panelNuevoUsuario = new System.Windows.Forms.Panel();
             this.dlg = new System.Windows.Forms.OpenFileDialog();
@@ -76,7 +75,7 @@
             // 
             // pctICONO
             // 
-            this.pctICONO.Location = new System.Drawing.Point(502, 99);
+            this.pctICONO.Location = new System.Drawing.Point(507, 97);
             this.pctICONO.Margin = new System.Windows.Forms.Padding(4);
             this.pctICONO.Name = "pctICONO";
             this.pctICONO.Size = new System.Drawing.Size(173, 170);
@@ -86,6 +85,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.flwpnlICONOS);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.cmbRol);
             this.panel4.Controls.Add(this.txtCorreo);
@@ -95,7 +95,7 @@
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(4, 30);
+            this.panel4.Location = new System.Drawing.Point(13, 9);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(486, 296);
@@ -202,7 +202,7 @@
             this.lblIcono.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblIcono.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIcono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.lblIcono.Location = new System.Drawing.Point(502, 99);
+            this.lblIcono.Location = new System.Drawing.Point(507, 97);
             this.lblIcono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIcono.Name = "lblIcono";
             this.lblIcono.Size = new System.Drawing.Size(173, 170);
@@ -221,7 +221,7 @@
             this.flwpnlICONOS.Controls.Add(this.pictureBox9);
             this.flwpnlICONOS.Controls.Add(this.pictureBox10);
             this.flwpnlICONOS.Controls.Add(this.pictureBox11);
-            this.flwpnlICONOS.Location = new System.Drawing.Point(508, 33);
+            this.flwpnlICONOS.Location = new System.Drawing.Point(32, 100);
             this.flwpnlICONOS.Margin = new System.Windows.Forms.Padding(4);
             this.flwpnlICONOS.Name = "flwpnlICONOS";
             this.flwpnlICONOS.Size = new System.Drawing.Size(281, 189);
@@ -374,23 +374,6 @@
             this.label1.Text = "Nuevo Usuario";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnGuardarCambios
-            // 
-            this.btnGuardarCambios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
-            this.btnGuardarCambios.FlatAppearance.BorderSize = 0;
-            this.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarCambios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarCambios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnGuardarCambios.Location = new System.Drawing.Point(203, 381);
-            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnGuardarCambios.Name = "btnGuardarCambios";
-            this.btnGuardarCambios.Size = new System.Drawing.Size(272, 55);
-            this.btnGuardarCambios.TabIndex = 9;
-            this.btnGuardarCambios.Text = "Guardar cambios";
-            this.btnGuardarCambios.UseVisualStyleBackColor = false;
-            this.btnGuardarCambios.Visible = false;
-            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
-            // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
@@ -398,7 +381,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnGuardar.Location = new System.Drawing.Point(203, 381);
+            this.btnGuardar.Location = new System.Drawing.Point(207, 392);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(272, 55);
@@ -409,8 +392,6 @@
             // 
             // panelNuevoUsuario
             // 
-            this.panelNuevoUsuario.Controls.Add(this.flwpnlICONOS);
-            this.panelNuevoUsuario.Controls.Add(this.btnGuardarCambios);
             this.panelNuevoUsuario.Controls.Add(this.panel4);
             this.panelNuevoUsuario.Controls.Add(this.btnGuardar);
             this.panelNuevoUsuario.Controls.Add(this.lblIcono);
@@ -486,7 +467,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnGuardarCambios;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Panel panelNuevoUsuario;
         private System.Windows.Forms.PictureBox pictureBox10;

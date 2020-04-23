@@ -96,12 +96,6 @@
     <Compile Include="MODULOS\Usuarios\frmNuevoUsuario.Designer.cs">
       <DependentUpon>frmNuevoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="MODULOS\Usuarios\Usuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MODULOS\Usuarios\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MODULOS\Cotizaciones\frmConsultarCotizaciones.resx">
@@ -129,9 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Usuarios\frmNuevoUsuario.resx">
       <DependentUpon>frmNuevoUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MODULOS\Usuarios\Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
