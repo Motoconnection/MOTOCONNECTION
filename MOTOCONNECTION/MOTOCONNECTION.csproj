@@ -84,6 +84,12 @@
     <Compile Include="MODULOS\MenuPrincipal\frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULOS\Productos\FormNuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Productos\FormNuevoProducto.Designer.cs">
+      <DependentUpon>FormNuevoProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\Productos\FormProductos.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,6 +8,6 @@ namespace MOTOCONNECTION.CONEXIONES
 {
     class ConexionMaestra
     {
-        public static string conexiones = @"Data source=DESKTOP-KJ9H1BM\SQLEXPRESS;Initial Catalog=MOTOCONNECTION;Integrated Security=True";
+        public static string conexiones = @"Data source=SEBARUA\SQLEXPRESS;Initial Catalog=MOTOCONNECTION;Integrated Security=True";
     }
 }
