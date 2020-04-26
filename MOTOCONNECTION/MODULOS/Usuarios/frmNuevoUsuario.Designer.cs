@@ -381,7 +381,7 @@
             this.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnGuardarCambios.Location = new System.Drawing.Point(203, 381);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(203, 352);
             this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(272, 55);

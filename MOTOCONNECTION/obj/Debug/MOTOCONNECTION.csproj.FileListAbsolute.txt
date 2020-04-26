@@ -46,3 +46,5 @@ C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Lo
 C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.MenuPrincipal.frmMenuPrincipal.resources
 C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Usuarios.frmMostrarUsuarios.resources
 C:\Users\sebas\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Usuarios.frmNuevoUsuario.resources
+C:\Users\sebas\Motoconnection\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Clientes.frmMostrarClientes.resources
+C:\Users\sebas\Motoconnection\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Clientes.frmNuevoCliente.resources
