@@ -28,30 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNuevoProducto));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.TextB_Stock = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TextB_Availability = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Price_Retail = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Price_Dealer = new System.Windows.Forms.TextBox();
+            this.Price_cost = new System.Windows.Forms.TextBox();
+            this.textWeight = new System.Windows.Forms.TextBox();
             this.txtNombreP = new System.Windows.Forms.TextBox();
             this.txtCod_part = new System.Windows.Forms.TextBox();
             this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textWeight = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
@@ -73,7 +72,6 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
@@ -98,15 +96,15 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btnGuardar);
-            this.panel4.Controls.Add(this.textBox7);
+            this.panel4.Controls.Add(this.TextB_Stock);
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.textBox6);
+            this.panel4.Controls.Add(this.TextB_Availability);
             this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.textBox5);
+            this.panel4.Controls.Add(this.Price_Retail);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.Price_Dealer);
+            this.panel4.Controls.Add(this.Price_cost);
             this.panel4.Controls.Add(this.textWeight);
             this.panel4.Controls.Add(this.txtNombreP);
             this.panel4.Controls.Add(this.txtCod_part);
@@ -121,6 +119,123 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(745, 387);
             this.panel4.TabIndex = 10;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.btnGuardar.Location = new System.Drawing.Point(327, 311);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(206, 55);
+            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // TextB_Stock
+            // 
+            this.TextB_Stock.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextB_Stock.Location = new System.Drawing.Point(455, 133);
+            this.TextB_Stock.Margin = new System.Windows.Forms.Padding(4);
+            this.TextB_Stock.Name = "TextB_Stock";
+            this.TextB_Stock.Size = new System.Drawing.Size(257, 24);
+            this.TextB_Stock.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(553, 99);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 19);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Stock";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // TextB_Availability
+            // 
+            this.TextB_Availability.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextB_Availability.Location = new System.Drawing.Point(455, 51);
+            this.TextB_Availability.Margin = new System.Windows.Forms.Padding(4);
+            this.TextB_Availability.Name = "TextB_Availability";
+            this.TextB_Availability.Size = new System.Drawing.Size(257, 24);
+            this.TextB_Availability.TabIndex = 12;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(533, 21);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 19);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Availability";
+            // 
+            // Price_Retail
+            // 
+            this.Price_Retail.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price_Retail.Location = new System.Drawing.Point(177, 263);
+            this.Price_Retail.Margin = new System.Windows.Forms.Padding(4);
+            this.Price_Retail.Name = "Price_Retail";
+            this.Price_Retail.Size = new System.Drawing.Size(257, 24);
+            this.Price_Retail.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(70, 220);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 19);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Price_Dealer:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(70, 263);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 19);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Price_Retail";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // Price_Dealer
+            // 
+            this.Price_Dealer.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price_Dealer.Location = new System.Drawing.Point(176, 220);
+            this.Price_Dealer.Margin = new System.Windows.Forms.Padding(4);
+            this.Price_Dealer.Name = "Price_Dealer";
+            this.Price_Dealer.Size = new System.Drawing.Size(257, 24);
+            this.Price_Dealer.TabIndex = 7;
+            // 
+            // Price_cost
+            // 
+            this.Price_cost.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price_cost.Location = new System.Drawing.Point(178, 177);
+            this.Price_cost.Margin = new System.Windows.Forms.Padding(4);
+            this.Price_cost.Name = "Price_cost";
+            this.Price_cost.Size = new System.Drawing.Size(257, 24);
+            this.Price_cost.TabIndex = 6;
+            // 
+            // textWeight
+            // 
+            this.textWeight.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textWeight.Location = new System.Drawing.Point(178, 133);
+            this.textWeight.Margin = new System.Windows.Forms.Padding(4);
+            this.textWeight.Name = "textWeight";
+            this.textWeight.Size = new System.Drawing.Size(257, 24);
+            this.textWeight.TabIndex = 4;
             // 
             // txtNombreP
             // 
@@ -148,6 +263,17 @@
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Size = new System.Drawing.Size(257, 24);
             this.txtBarcode.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(75, 177);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 19);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Price_Cost:";
             // 
             // label5
             // 
@@ -193,133 +319,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Barcode:";
             // 
-            // textWeight
-            // 
-            this.textWeight.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textWeight.Location = new System.Drawing.Point(178, 133);
-            this.textWeight.Margin = new System.Windows.Forms.Padding(4);
-            this.textWeight.Name = "textWeight";
-            this.textWeight.Size = new System.Drawing.Size(257, 24);
-            this.textWeight.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(75, 177);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 19);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Price_Cost:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(178, 177);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(257, 24);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(176, 220);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(257, 24);
-            this.textBox4.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(70, 263);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 19);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Price_Retail";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(70, 220);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 19);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Price_Dealer:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(177, 263);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(257, 24);
-            this.textBox5.TabIndex = 10;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(533, 21);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 19);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Availability";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(455, 51);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(257, 24);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(553, 99);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 19);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Stock";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(455, 133);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(257, 24);
-            this.textBox7.TabIndex = 14;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnGuardar.Location = new System.Drawing.Point(327, 311);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(206, 55);
-            this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            btnGuardar.Click += new System.EventHandler(btnGuardar_Click);
-            // 
             // FormNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -328,9 +327,10 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormNuevoProducto";
             this.Text = "FormNuevoProducto";
+            this.Load += new System.EventHandler(this.FormNuevoProducto_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -347,8 +347,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Price_Dealer;
+        private System.Windows.Forms.TextBox Price_cost;
         private System.Windows.Forms.TextBox textWeight;
         private System.Windows.Forms.TextBox txtNombreP;
         private System.Windows.Forms.TextBox txtCod_part;
@@ -359,10 +359,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TextB_Availability;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Price_Retail;
+        private System.Windows.Forms.TextBox TextB_Stock;
         private System.Windows.Forms.Button btnGuardar;
     }
 }

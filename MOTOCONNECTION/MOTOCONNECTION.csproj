@@ -136,6 +136,9 @@
     <EmbeddedResource Include="MODULOS\MenuPrincipal\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Productos\FormNuevoProducto.resx">
+      <DependentUpon>FormNuevoProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Productos\FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
     </EmbeddedResource>
