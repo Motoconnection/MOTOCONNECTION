@@ -58,9 +58,9 @@ C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTIO
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Login.frmInicioSesion.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Login.Login.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.MenuPrincipal.frmMenuPrincipal.resources
-C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Productos.FormMostrarProductos.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Usuarios.frmMostrarUsuarios.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Usuarios.frmNuevoUsuario.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Usuarios.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.Properties.Resources.resources
 C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.csproj.GenerateResource.Cache
+C:\Users\User\Source\Repos\MOTOCONNECTION\MOTOCONNECTION\obj\Debug\MOTOCONNECTION.MODULOS.Productos.FormProductos.resources
